@@ -157,6 +157,7 @@
 
 .about-text {
 	text-align: left;
+	padding: 25px;
 }
 
 .about-text .button {
@@ -325,6 +326,7 @@
 	margin: 0 auto;
 	max-width: 1000px;
 	margin-top: 20px;
+	padding: 10px;
 	
 }
 
@@ -493,7 +495,7 @@
 	border-radius: 50%;
 }
 
-#quotes {
+.quotes {
 	transform: rotate(180deg);
 	font-size: 80px;
 	color: #7f7f7f;
@@ -594,7 +596,7 @@
 	font-weight: bold;
 }
 
-#month {
+.month {
 	text-transform: uppercase;
 	color: grey;
 	margin-bottom: 20px;
@@ -742,7 +744,7 @@
 	font-weight: bold;
 }
 
-#line {
+.line {
 	content: "";
 	background-color: grey;
 	width: 30px;
@@ -817,7 +819,7 @@
 	border-top: 1px solid grey;
 	background-color: #ededed;
 	text-align: center;
-	height: 600px;
+	padding-bottom: 50px;
 }
 
 .contact h1 {
@@ -917,6 +919,7 @@
 .footer {
 	background-color: black;
 	position: relative;
+	height: 320px;
 }
 
 .footer-row {
@@ -924,8 +927,7 @@
 	padding-top: 25px;
 	padding-bottom: 25px;
 	max-width: 1200px;
-	width: 100%;
-	height: 300px;
+	width: 100%;	
 }
 
 .footer-row p {
@@ -934,7 +936,6 @@
 
 .footer-row .icons {
 	color: white;
-	height: 100%;
 }
 
 .footer-row .svg-inline--fa {
@@ -966,7 +967,7 @@
 .email {
 	background-color: #373737;
 	text-align: center;
-	height: 100%;
+	height: 260px;
 }
 
 .email input {
@@ -1072,12 +1073,24 @@
 
 	.adress {
 	position: static;
-	text-align: center;
+	text-align: left;
 	margin: 0 auto;
 	}
+
+	.footer-row .icons h3 {
+	margin-top: 50px;
+	} 
 }
 
 @media (max-width: 600px) {
+	
+	.container {
+		padding: 0px;
+	}
+
+	.about-text .button {
+	float: none;
+	}
 
 	#design, #com {
 		font-size: 25px;}	
@@ -1085,6 +1098,8 @@
 	.home-text p {
 		font-size: 16px;
 	}
+
+	
 
 	.home-text {
 	position: absolute;
@@ -1110,9 +1125,41 @@
 	#message {
 	width: 250px;
 	}
-	
+
 	.about .button-circle {
 	top: -50px;
 	left: 50vw; }
 
+}
+
+@media (max-width: 360px) {
+	.navbar-nav> li {
+  		display: block;
+  		height: 25px;
+  		transition: 0.3s;
+	}
+	.navbar-default .navbar-nav>li>a {
+	  font-size: 12px;
+	  display: block;
+	  height: 100%;
+	  line-height: 10px;
+	  transition: 0.3s;
+	}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #b98b59;
+  text-decoration: none;
+}
+
+.navbar-nav> li:hover a {
+  color: #b98b59;
+}
+
+.navbar-nav> li:hover {
+  border-bottom: 0px;
+}
+
+	.email input {
+		width: 250px;
+	}
 }
